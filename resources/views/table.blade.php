@@ -96,9 +96,9 @@
                     <tr>
                         <td>{{ $dept->name }}</td>
                         <td>{{  $users->where('dept_id', $dept->id)->where('status', 'cont')->count() ?: '' }}</td>
-                        <td>{{  $users->where('dept_id', $dept->id)->where('status', 'cont')->count() ?: '' }}</td>
-                        <td>{{  $users->where('dept_id', $dept->id)->where('status', 'cont')->count() ?: ''  }}</td>
-                        <td>{{  $users->where('dept_id', $dept->id)->where('status', 'cont')->count() ?: ''  }}</td>
+                        <td>{{  $users->where('dept_id', $dept->id)->where('status', 'emp')->count() ?: '' }}</td>
+                        <td>{{  $users->where('dept_id', $dept->id)->where('status', 'not_act')->count() ?: ''  }}</td>
+                        <td>{{  $users->where('dept_id', $dept->id)->count() ?: ''  }}</td>
                     </tr>
                 @endforeach
 
